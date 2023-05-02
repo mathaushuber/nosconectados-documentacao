@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "f4c3a493-f00c-44b6-9f46-126d3fa91826",
+		"name": "api/v1/sensores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24993634"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/v1/sensores/atualiza/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcl9wYXNzd29yZCI6IjgyN2NjYjBlZWE4YTcwNmM0YzM0YTE2ODkxZjg0ZTdiIiwiaXNBZG1pbiI6MCwicmVnaXN0ZXJDb25maXJtZWQiOjAsImZpcnN0TmFtZSI6Ik1hdGhhdXMiLCJsYXN0TmFtZSI6Ikh1YmVyIiwicGhvbmUiOiI1Mzk5NzA0NTQ3NCIsImVtYWlsIjoiaHViZXIubWF0aGF1c0BnbWFpbC5jb20iLCJmYWNlYm9va1Byb2ZpbGUiOm51bGwsImdlbmRlciI6Ik0iLCJiaXJ0aGRheURhdGUiOm51bGx9.mF6EmKD1CsVbuqi3J6GinQ5zoxbYm2ldz8Dv6-Hutfg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "readAt",
+							"value": "2023-06-04",
+							"type": "text"
+						},
+						{
+							"key": "temperatureSoil",
+							"value": "30.451",
+							"type": "text"
+						},
+						{
+							"key": "temperatureAir",
+							"value": "26.31123",
+							"type": "text"
+						},
+						{
+							"key": "luminosity",
+							"value": "1834.56789",
+							"type": "text"
+						},
+						{
+							"key": "pluviometer",
+							"value": "0.83210",
+							"type": "text"
+						},
+						{
+							"key": "ultraviolet",
+							"value": "4.39012",
+							"type": "text"
+						},
+						{
+							"key": "temperatureCase",
+							"value": "32.747567",
+							"type": "text"
+						},
+						{
+							"key": "rainIntensity",
+							"value": "2.34567",
+							"type": "text"
+						},
+						{
+							"key": "windDirection",
+							"value": "174.28901",
+							"type": "text"
+						},
+						{
+							"key": "windSpeed",
+							"value": "3.65432",
+							"type": "text"
+						},
+						{
+							"key": "gas",
+							"value": "1.82379",
+							"type": "text"
+						},
+						{
+							"key": "altitude",
+							"value": "494.125",
+							"type": "text"
+						},
+						{
+							"key": "pressure",
+							"value": "114.419",
+							"type": "text"
+						},
+						{
+							"key": "humidityAirRelative",
+							"value": "65.43210",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sensores/atualiza/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sensores",
+						"atualiza",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/sensores/adiciona",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcl9wYXNzd29yZCI6IjgyN2NjYjBlZWE4YTcwNmM0YzM0YTE2ODkxZjg0ZTdiIiwiaXNBZG1pbiI6MSwicmVnaXN0ZXJDb25maXJtZWQiOjEsImZpcnN0TmFtZSI6Ik1hdGhhdXMiLCJsYXN0TmFtZSI6Ikh1YmVyIiwiZG9jdW1lbnQiOiIwMjQwMzAyMzAzNSIsInBob25lIjoiNTM5OTcwNDU0NzQiLCJlbWFpbCI6Im1hdGhhdXNAbm9zY29uZWN0YWRvcy5jb20iLCJmYWNlYm9va1Byb2ZpbGUiOiJodHRwczpcL1wvd3d3LmZhY2Vib29rLmNvbVwvbWF0aGF1cy5odWJlclwvIiwiZ2VuZGVyIjoiTSIsImJpcnRoZGF5RGF0ZSI6IjE5OTgtMTItMTUiLCJ1cGRhdGVkX2F0IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAyMy0wMS0xMVQwMDowMDowMC4wMDAwMDBaIn0.DvuGgE9tcft1F7kIbfrdq1D8VgTouSjnUPdUcpt62iw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "readAt",
+							"value": "2023-05-04",
+							"type": "text"
+						},
+						{
+							"key": "temperatureSoil",
+							"value": "32.76201",
+							"type": "text"
+						},
+						{
+							"key": "temperatureAir",
+							"value": "28.54123",
+							"type": "text"
+						},
+						{
+							"key": "luminosity",
+							"value": "2534.56789",
+							"type": "text"
+						},
+						{
+							"key": "pluviometer",
+							"value": "5.43210",
+							"type": "text"
+						},
+						{
+							"key": "ultraviolet",
+							"value": "7.89012",
+							"type": "text"
+						},
+						{
+							"key": "temperatureCase",
+							"value": "35.34567",
+							"type": "text"
+						},
+						{
+							"key": "rainIntensity",
+							"value": "12.34567",
+							"type": "text"
+						},
+						{
+							"key": "windDirection",
+							"value": "156.78901",
+							"type": "text"
+						},
+						{
+							"key": "windSpeed",
+							"value": "7.65432",
+							"type": "text"
+						},
+						{
+							"key": "gas",
+							"value": "0.12345",
+							"type": "text"
+						},
+						{
+							"key": "altitude",
+							"value": "500.135",
+							"type": "text"
+						},
+						{
+							"key": "pressure",
+							"value": "101.213",
+							"type": "text"
+						},
+						{
+							"key": "humidityAirRelative",
+							"value": "65.43210",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sensores/adiciona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sensores",
+						"adiciona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/sensores/lista",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcl9wYXNzd29yZCI6IjgyN2NjYjBlZWE4YTcwNmM0YzM0YTE2ODkxZjg0ZTdiIiwiaXNBZG1pbiI6MSwicmVnaXN0ZXJDb25maXJtZWQiOjEsImZpcnN0TmFtZSI6Ik1hdGhhdXMiLCJsYXN0TmFtZSI6Ikh1YmVyIiwiZG9jdW1lbnQiOiIwMjQwMzAyMzAzNSIsInBob25lIjoiNTM5OTcwNDU0NzQiLCJlbWFpbCI6Im1hdGhhdXNAbm9zY29uZWN0YWRvcy5jb20iLCJmYWNlYm9va1Byb2ZpbGUiOm51bGwsImdlbmRlciI6Ik0iLCJiaXJ0aGRheURhdGUiOiIxOTk4LTEyLTE1IiwidXBkYXRlZF9hdCI6bnVsbCwiY3JlYXRlZF9hdCI6bnVsbH0.1BFjLBPEE-7UjqtMdqOGMTxSdmXmEvpscuKKq5EaQkI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/sensor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sensor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/sensores/remove/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sensores/remove/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sensores",
+						"remove",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

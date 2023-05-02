@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "94c9ddf8-3530-44ad-abba-af5a89cfc0fb",
+		"name": "api/v1/informacoes-sensor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24993634"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/v1/informacoes-sensor/adiciona",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "lowDescription",
+							"value": "aoskapskaopkspa",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "psoaksoaskp",
+							"type": "text"
+						},
+						{
+							"key": "isActive",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "typeProduction",
+							"value": "opaksopas",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "02.039209",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "09.390203",
+							"type": "text"
+						},
+						{
+							"key": "property",
+							"value": "fazendinha",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "rs",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "arroio grande",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/informacoes-sensor/adiciona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"informacoes-sensor",
+						"adiciona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/informacoes-sensor/lista",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/informacoes-sensor/lista",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"informacoes-sensor",
+						"lista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/informacoes-sensor/remove/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/informacoes-sensor/remove/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"informacoes-sensor",
+						"remove",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/informacoes-sensor/atualiza/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "lowDescription",
+							"value": "aoskapskaopkspa",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "psoaksoaskp",
+							"type": "text"
+						},
+						{
+							"key": "isActive",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "typeProduction",
+							"value": "opaksopas",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "02.039209",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "09.390203",
+							"type": "text"
+						},
+						{
+							"key": "property",
+							"value": "fazendinha",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "rs",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "arroio grande",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/informacoes-sensor/atualiza/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"informacoes-sensor",
+						"atualiza",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "31b76db9-23c6-4052-a477-1e5c7878e117",
+		"name": "api/v1/localizacoes-user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24993634"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/v1/localizacoes-users/lista",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/localizacoes-users/lista",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"localizacoes-users",
+						"lista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/localizacoes-users/adiciona",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "street",
+							"value": "Júlio de Castilhos",
+							"type": "text"
+						},
+						{
+							"key": "numberU",
+							"value": "1173",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Arroio Grande",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "aopska",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "96330000",
+							"type": "text"
+						},
+						{
+							"key": "complement",
+							"value": null,
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "neighborhood",
+							"value": "oaskps",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/localizacoes-users/adiciona",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"localizacoes-users",
+						"adiciona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/localizacoes-users/remove/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/localizacoes-users/remove/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"localizacoes-users",
+						"remove",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/localizacoes-users/atualiza/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "street",
+							"value": "Júlio de Castilhos",
+							"type": "text"
+						},
+						{
+							"key": "numberU",
+							"value": "1173",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Arroio Grande",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "aopska",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "96330000",
+							"type": "text"
+						},
+						{
+							"key": "complement",
+							"value": null,
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "neighborhood",
+							"value": "oaskps",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/localizacoes-users/atualiza/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"localizacoes-users",
+						"atualiza",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

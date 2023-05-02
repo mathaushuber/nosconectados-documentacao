@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "2b264ea9-6c00-48ab-80fd-47f8fe045ba1",
+		"name": "api/v1/usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24993634"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/v1/usuarios/cadastro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcl9wYXNzd29yZCI6IjgyN2NjYjBlZWE4YTcwNmM0YzM0YTE2ODkxZjg0ZTdiIiwiaXNBZG1pbiI6MCwicmVnaXN0ZXJDb25maXJtZWQiOjAsImZpcnN0TmFtZSI6Ik1hdGhhdXMiLCJsYXN0TmFtZSI6Ikh1YmVyIiwicGhvbmUiOiI1Mzk5NzA0NTQ3NCIsImVtYWlsIjoiaHViZXIubWF0aGF1c0BnbWFpbC5jb20iLCJmYWNlYm9va1Byb2ZpbGUiOm51bGwsImdlbmRlciI6Ik0iLCJiaXJ0aGRheURhdGUiOm51bGx9.mF6EmKD1CsVbuqi3J6GinQ5zoxbYm2ldz8Dv6-Hutfg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_password",
+							"value": "45678",
+							"type": "text"
+						},
+						{
+							"key": "isAdmin",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "registerConfirmed",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Teste",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Teste",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "00000000",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "teste@nosconectados.com",
+							"type": "text"
+						},
+						{
+							"key": "facebookProfile",
+							"value": "apskaopksopa",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "M",
+							"type": "text"
+						},
+						{
+							"key": "birthdayDate",
+							"value": "1998-10-12",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"value": "02403023035",
+							"type": "text"
+						},
+						{
+							"key": "street",
+							"value": "rua das couves",
+							"type": "text"
+						},
+						{
+							"key": "numberU",
+							"value": "170",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "das couves",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "do sul",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "96330111",
+							"type": "text"
+						},
+						{
+							"key": "neighborhood",
+							"value": "centro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/usuarios/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"usuarios",
+						"cadastro"
+					]
+				},
+				"description": "Cadastra usuários"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/usuarios/lista",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/usuarios/lista",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"usuarios",
+						"lista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/usuarios/remove/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/usuarios/remove/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"usuarios",
+						"remove",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/usuarios/atualiza/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_password",
+							"value": "45678",
+							"type": "text"
+						},
+						{
+							"key": "isAdmin",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "registerConfirmed",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Teste",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Teste",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "00000000",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mathaus@nosconectados.com",
+							"type": "text"
+						},
+						{
+							"key": "facebookProfile",
+							"value": "apskaopksopa",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "M",
+							"type": "text"
+						},
+						{
+							"key": "birthdayDate",
+							"value": "1998-10-12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/usuarios/atualiza/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"usuarios",
+						"atualiza",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

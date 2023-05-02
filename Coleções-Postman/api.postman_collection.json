@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "4a071358-03b0-43f8-b3b2-5226918f848b",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24993634"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "mathaus@nosconectados.com",
+							"type": "text"
+						},
+						{
+							"key": "user_password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "huber.mathaus@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "user_password",
+							"value": "12345",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/sensores/lista",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcl9wYXNzd29yZCI6IjgyN2NjYjBlZWE4YTcwNmM0YzM0YTE2ODkxZjg0ZTdiIiwiaXNBZG1pbiI6MSwicmVnaXN0ZXJDb25maXJtZWQiOjEsImZpcnN0TmFtZSI6Ik1hdGhhdXMiLCJsYXN0TmFtZSI6Ikh1YmVyIiwiZG9jdW1lbnQiOiIwMjQwMzAyMzAzNSIsInBob25lIjoiNTM5OTcwNDU0NzQiLCJlbWFpbCI6Im1hdGhhdXNAbm9zY29uZWN0YWRvcy5jb20iLCJmYWNlYm9va1Byb2ZpbGUiOiJodHRwczpcL1wvd3d3LmZhY2Vib29rLmNvbVwvbWF0aGF1cy5odWJlclwvIiwiZ2VuZGVyIjoiTSIsImJpcnRoZGF5RGF0ZSI6IjE5OTgtMTItMTUiLCJ1cGRhdGVkX2F0IjpudWxsLCJjcmVhdGVkX2F0IjoiMjAyMy0wMS0xMVQwMDowMDowMC4wMDAwMDBaIn0.DvuGgE9tcft1F7kIbfrdq1D8VgTouSjnUPdUcpt62iw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/sensor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sensor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
